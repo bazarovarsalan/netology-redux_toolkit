@@ -1,0 +1,327 @@
+html {
+  font-size: calc(10px + (14 - 10) * ((100vw - 400px) / (800 - 400)));
+}
+
+body {
+  font-family: sans-serif;
+  background: #e3e5f6;
+}
+
+.App {
+  width: 100vw;
+  height: 5000px;
+  background: #e3e5f6;
+}
+
+.title {
+  width: 90%;
+  max-width: 1000px;
+  height: 100px;
+  color: black;
+  margin: auto;
+  background: #e3e5f6;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  background: seashell;
+  mix-blend-mode: multiply;
+}
+
+.article {
+  padding: 5%;
+}
+
+.article__title {
+  margin-bottom: 1em;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.article__paragraph {
+  margin-bottom: 0.6em;
+  line-height: 1.5;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.menu {
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  background: #e3e5f6;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item {
+  height: 40px;
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.6;
+  border-bottom-width: 0.1rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+.menu__item:hover {
+  opacity: 1;
+  border-bottom-color: black;
+}
+
+.menu__item.active {
+  opacity: 1;
+  border-bottom-color: black;
+  color: black;
+}
+
+.form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputWrap {
+  width: 600px;
+  height: 30px;
+  outline: none;
+  position: relative;
+}
+
+.input {
+  width: 550px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 0 10px;
+  outline: none;
+}
+
+.searchBtn {
+  position: absolute;
+  width: 70px;
+  height: 28px;
+  border-radius: 33px;
+  border: 0;
+  right: 30px;
+  top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+}
+
+.listContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.movieContainer {
+  display: flex;
+  width: 300px;
+  height: 500px;
+  max-width: 100%;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.posterWrap {
+  width: 100%;
+  height: 80%;
+  position: relative;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.info {
+  width: 100%;
+  height: 20%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleCard {
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.movieIDContainer {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+  margin-top: 50px;
+  flex-direction: row;
+}
+
+.infoID {
+  width: 60%;
+  height: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.titleID {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 25px;
+}
+
+.mediablock {
+  display: inline-block;
+  width: 67%;
+  height: 25px;
+  flex-direction: row;
+}
+
+.mediablockSpan {
+  display: table-cell;
+  width: 150px;
+  height: 40px;
+  margin-left: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mediablockSpan:nth-child(2) {
+  border: 1px solid white;
+}
+
+.mediablockSpan:nth-child(3) {
+  margin-left: 10px;
+  width: 250px;
+}
+
+.someInfo {
+  display: flex;
+  margin-top: 40px;
+  color: silver;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.plot {
+  margin-top: 40px;
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.addToFavourites {
+  width: 150px;
+  height: 40px;
+  border: 2px solid gold;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  color: gold;
+  cursor: pointer;
+  top: 3px;
+  right: 3px;
+  background-color: black;
+}
+
+.addToFavourites:active {
+  background-color: gold;
+  color: black;
+}
+
+.removeToFavourites {
+  width: 150px;
+  height: 40px;
+  border: 2px solid gold;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  color: gold;
+  cursor: pointer;
+  top: 3px;
+  right: 3px;
+  background-color: black;
+}
+
+.removeToFavourites:active {
+  background-color: gold;
+  color: black;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.no-result {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
